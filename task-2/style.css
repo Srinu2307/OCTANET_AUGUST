@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: #aa01da;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.container h1 {
+    color: white;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#taskInput {
+    padding: 10px;
+    width: calc(100% - 60px);
+    border: none;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #ade3fe;
+    color: black;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #0073e6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li:nth-child(odd) {
+    background-color: #f4feff;
+}
+
+li:nth-child(even) {
+    background-color: #ddfdfc;
+}
+
+li.completed {
+    background-color: #3a6fef;
+}
+
+li.completed .task-text {
+    text-decoration: line-through;
+    color: white;
+    text-align: left;
+    flex-grow: 1;
+}
+
+li.completed::before {
+    content: '✔';
+    color: white;
+    margin-right: 10px;
+}
+
+li button {
+    background-color: red;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+li button:hover {
+    background-color: darkred;
+}
+
+li.completed button {
+    color: white;
+}
